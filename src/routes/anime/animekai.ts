@@ -1,6 +1,6 @@
 import { FastifyRequest, FastifyReply, FastifyInstance, RegisterOptions } from 'fastify';
-import { ANIME } from '@consumet/extensions';
-import { StreamingServers } from '@consumet/extensions/dist/models';
+import { ANIME } from '@consumet/extensions-animekai';
+import { StreamingServers } from '@consumet/extensions-animekai/dist/models';
 
 const routes = async (fastify: FastifyInstance, _options: RegisterOptions) => {
   const animekai = new ANIME.AnimeKai();
