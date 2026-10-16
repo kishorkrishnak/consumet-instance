@@ -3,6 +3,8 @@ import { PROVIDERS_LIST } from '@consumet/extensions';
 
 import gogoanime from './gogoanime';
 import animekai from './animekai';
+import animesaturn from './animesaturn';
+import animeunity from './animeunity';
 import animepahe from './animepahe';
 import zoro from './zoro';
 import nineanime from './9anime';
@@ -15,6 +17,8 @@ import marin from './marin';
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   await fastify.register(gogoanime, { prefix: '/gogoanime' });
   await fastify.register(animekai, { prefix: '/animekai' });
+  await fastify.register(animesaturn, { prefix: '/animesaturn' });
+  await fastify.register(animeunity, { prefix: '/animeunity' });
   await fastify.register(animepahe, { prefix: '/animepahe' });
   await fastify.register(zoro, { prefix: '/zoro' });
   await fastify.register(nineanime, { prefix: '/9anime' });
